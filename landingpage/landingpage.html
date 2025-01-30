@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery Agency</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: #1874a2;
+        }
+        header {
+            background: linear-gradient(90deg, #8860D0, #5AB9EA);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        
+        nav a {
+            color: #1874a2;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: #a6b0fa;
+        }
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .intro {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.3em;
+            line-height: 1.8;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 5px 10px rgb(25, 30, 85);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgb(20, 25, 70);
+        }
+        .cta {
+            margin-top: 40px;
+        }
+        .cta a {
+            background: linear-gradient(90deg, #8860D0, #5AB9EA);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: background 0.3s;
+        }
+        .cta a:hover {
+            background: linear-gradient(90deg, #8860D0, #5AB9EA);
+            color: #b3bbf3;
+            box-shadow: 0 5px 10px rgb(20, 25, 70);
+            transition: transform 0.3s, box-shadow 0.3s;    
+        }
+        footer {
+            background: linear-gradient(90deg, #8860D0, #5AB9EA);
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore the Art World</h1>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p class="intro">Step into a realm of creativity and inspiration. Our agency connects you with stunning artworks from talented artists worldwide. Experience the beauty of art like never before.</p>
+    </section>
+
+    <section id="gallery">
+        <h2>Art Showcase</h2>
+        <div class="gallery">
+            <img src="image/b2.jpg" alt="Abstract Artwork">
+            <img src="image/b3.jpg" alt="Modern Sculpture">
+            <img src="image/cc1.jpg" alt="Landscape Painting">
+            <img src="image/b1.jpg" alt="Contemporary Design">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p class="intro">Are you an art enthusiast or an artist? We’d love to hear from you. Reach out today and let's create something amazing together.</p>
+        <div class="cta">
+            <a href="mailto:info@artgalleryagency.com">Get in Touch</a>
+        </div>
+    </section>
+</body>
+</html>
